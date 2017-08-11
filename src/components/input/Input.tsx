@@ -1,16 +1,15 @@
 import * as React from 'react';
 
-const Input = ({ id, protocol, format, url, parameters, mapping, checkEvery, isActive}) => (
-  <tr>
-      <td>{id}</td>
-      <td>{protocol}</td>
-        <td>{format}</td>
-        <td>{url}</td>
-        <td>{parameters}</td>
-        <td>{mapping}</td>
-        <td>{checkEvery}</td>
-        <td>{isActive}</td>
-  </tr>
-);
+const Input = (input) => {
+    return (
+        <tr>
+        {
+            Object.keys(input).map((header, index) => (
+                <td key={index}>{input[header]}</td>
+            ))
+        }
+        </tr>
+    );
+};
 
 export default Input;

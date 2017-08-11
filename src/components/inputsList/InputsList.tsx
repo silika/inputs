@@ -2,41 +2,56 @@ import * as React from 'react';
 import Input from '../input/Input';
 
 const InputList = ({ inputs }) => (
-  <table>
-    <thead>
-      <tr>
-      {
-          inputs.length
-              ? renderHeaders()
-              : null
-      }
-      </tr>
-    </thead>
-    <tbody>
-    {
-        inputs.map(input => (
-            <Input key={input.id} {...input}  />
-        ))
-    }
-    </tbody>
-
-  </table>
+    hasInputs(inputs) ? <InputsTable inputs={inputs}/>
+                      : <TablePlaceholder/>
 );
 
 export default InputList;
 
-function renderHeaders () {
-   let headers = [
-       'id',
-       'protocol',
-       'format',
-       'url',
-       'parameters',
-       'mapping',
-       'checkEvery',
-       'isActive'
-   ]
-   return headers.map( (header, index) => (
-        <th key={index}>{header}</th>
+const TablePlaceholder = () => (
+    <table>
+        <tbody>
+            <tr>
+                <td>No items loaded</td>
+            </tr>
+        </tbody>
+    </table>
+);
+
+const InputsTable = ({inputs}) => (
+    <table>
+        <thead>
+        {
+            renderTableHeader(inputs)
+        }
+        </thead>
+        <tbody>
+        {
+            renderTableBody(inputs)
+        }
+        </tbody>
+
+    </table>
+);
+
+const hasInputs = (inputs) => inputs.length;
+
+const renderTableHeader = (inputs) => {
+
+    return (
+        <tr>
+        {
+            Object.keys(inputs[0]).map((header, index) => (
+                <th key={index}>{header}</th>
+            ))
+        }
+        </tr>
+    );
+};
+
+const renderTableBody = (inputs) => {
+
+    return inputs.map(input => (
+        <Input key={input.id} {...input}  />
     ));
-}
+};
