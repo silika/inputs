@@ -1,29 +1,18 @@
 import * as React from 'react';
 import Input from '../input/Input';
 
-const InputList = ({ inputs }) => (
-    hasInputs(inputs) ? <InputsTable inputs={inputs}/>
-                      : <TablePlaceholder/>
-);
-
-export default InputList;
-
-const TablePlaceholder = () => (
-    <table>
-        <tbody>
-            <tr>
-                <td>No items loaded</td>
-            </tr>
-        </tbody>
-    </table>
-);
-
-const InputsTable = ({inputs}) => (
+const InputsList = ({ inputs }) => (
     <table>
         <thead>
-        {
-            renderTableHeader(inputs)
-        }
+        <tr>
+            <th>protocol</th>
+            <th>format</th>
+            <th>url</th>
+            <th>parameters</th>
+            <th>checkEvery</th>
+            <th>state</th>
+            <th>mapping</th>
+        </tr>
         </thead>
         <tbody>
         {
@@ -34,20 +23,7 @@ const InputsTable = ({inputs}) => (
     </table>
 );
 
-const hasInputs = (inputs) => inputs.length;
-
-const renderTableHeader = (inputs) => {
-
-    return (
-        <tr>
-        {
-            Object.keys(inputs[0]).map((header, index) => (
-                <th key={index}>{header}</th>
-            ))
-        }
-        </tr>
-    );
-};
+export default InputsList;
 
 const renderTableBody = (inputs) => {
 

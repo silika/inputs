@@ -1,10 +1,10 @@
 import * as React from 'react';
+import { PanelContainer } from './containers/Panel';
 import './App.scss';
-import { InputListContainer } from './containers/InputList';
 
 const App = () =>  (
         <div className="inputsApp">
-            <InputListContainer />
+            <PanelContainer />
         </div>
     );
 
