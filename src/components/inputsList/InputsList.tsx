@@ -27,7 +27,7 @@ export default InputsList;
 
 const renderTableBody = (inputs) => {
 
-    return inputs.map(input => (
-        <Input key={input.id} {...input}  />
+    return inputs.map((input, index) => (
+        <Input key={index} {...input}  />
     ));
 };
