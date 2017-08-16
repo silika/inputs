@@ -15,8 +15,9 @@
     "react-scripts-ts": "2.5.0"
   },
   "devDependencies": {
-    "@autumn-platform/common": ">=0.0.2",
-    "@autumn-platform/inputs": ">=0.0.2",
+    "@autumn-platform/common": "^0.1.1",
+    "@autumn-platform/inputs": "^0.1.1",
+    "@autumn-ui/inputs-api-redux": "^0.1.1",
     "@types/react-redux": "^4.4.47",
     "enzyme": "^2.9.1",
     "redux": "^3.7.2"

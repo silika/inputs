@@ -16,7 +16,9 @@ const InputsList = ({ inputs }) => (
         </thead>
         <tbody>
         {
-            renderTableBody(inputs)
+            Object.keys(inputs).map((inputId) => (
+                <Input key={inputId} {...inputs[inputId]}  />
+            ))
         }
         </tbody>
 
@@ -24,10 +26,3 @@ const InputsList = ({ inputs }) => (
 );
 
 export default InputsList;
-
-const renderTableBody = (inputs) => {
-
-    return inputs.map((input, index) => (
-        <Input key={index} {...input}  />
-    ));
-};
