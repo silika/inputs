@@ -2,10 +2,10 @@ import * as React from 'react';
 import { InputsContainer } from './containers/Inputs';
 import './App.scss';
 
-const App = () =>  (
+export default  function App() {
+    return (
         <div className="inputsApp">
             <InputsContainer />
         </div>
     );
-
-export default App;
+}

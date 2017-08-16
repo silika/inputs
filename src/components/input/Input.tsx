@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-const Input = (input) => (
+export default function Input(input) {
+    return (
         <tr>
             <td>{input.protocol}</td>
             <td>{input.format}</td>
@@ -11,5 +12,4 @@ const Input = (input) => (
             <td>{input.mapping}</td>
         </tr>
     );
-
-export default Input;
+}
