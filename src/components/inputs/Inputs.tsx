@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { InputsListContainer } from '../../containers/InputsList';
-import Empty from '../empty/Empty';
+import { Empty } from '../empty';
 
 export default function Inputs({ isEmpty }) {
     return (

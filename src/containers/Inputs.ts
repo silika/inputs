@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Inputs from '../components/inputs/Inputs';
+import { Inputs } from '../components/inputs';
 
 const mapStateToProps = (state) => ({'isEmpty': !Object.keys(state.inputs).length });
 
