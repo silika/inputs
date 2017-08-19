@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Input from '../input/Input';
+import { Input } from '../input';
 
 export default function InputsList({ inputs }) {
     return (
@@ -17,8 +17,8 @@ export default function InputsList({ inputs }) {
             </thead>
             <tbody>
             {
-                Object.keys(inputs).map((inputId) => (
-                    <Input key={inputId} {...inputs[inputId]}  />
+                inputs.map((input, inputIndex) => (
+                    <Input key={inputIndex} input={input}  />
                 ))
             }
             </tbody>
