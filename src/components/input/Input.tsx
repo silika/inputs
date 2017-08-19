@@ -7,9 +7,10 @@ export function Input({ input }) {
             <td>{input.format}</td>
             <td>{input.url}</td>
             <td>{input.parameters}</td>
-            <td>{input.checkEvery}</td>
-            <td>{input.state}</td>
             <td>{input.mapping}</td>
+            <td>{input.state}</td>
+            <td>{input.checkEvery}</td>
+            <td>{input.isActive}</td>
         </tr>
     );
 }

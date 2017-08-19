@@ -4,8 +4,8 @@ import { Empty } from '../empty';
 
 export function Inputs({ isEmpty }) {
     return (
-        <div className="inputsPanel">
-            <div className="inputsPanel__content">
+        <div className="inputs">
+            <div className="inputs__content">
                 {
                     !isEmpty ? <InputsListContainer />
                              :  <Empty />

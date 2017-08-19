@@ -20,6 +20,9 @@
     "@autumn-ui/inputs-api-redux": "^0.1.1",
     "@types/react-redux": "^4.4.47",
     "enzyme": "^2.9.1",
+    "jest": "^20.0.4",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
     "redux": "^3.7.2"
   },
   "scripts": {
