@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-export default function Empty() {
+export function Empty() {
     return (
-        <div className="inputsNoContent">
+        <div className="empty_content">
             <div>No content Loaded</div>
         </div>
     );

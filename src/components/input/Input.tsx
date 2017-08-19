@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export default function Input({ input }) {
+export function Input({ input }) {
     return (
         <tr>
             <td>{input.protocol}</td>

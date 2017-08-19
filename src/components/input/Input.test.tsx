@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import Input from './Input';
+import { Input } from './Input';
 
 it('renders input', () => {
     const tbody = document.createElement('tbody');

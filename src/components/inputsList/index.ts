@@ -1,1 +1,1 @@
-export {default as InputsList} from './InputsList';
+export * from './InputsList';

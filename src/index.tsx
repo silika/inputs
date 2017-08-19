@@ -30,7 +30,7 @@ const initialState = {
 };
 
 const store = createStore(temporaryAppReducer, initialState);
-const appContainerElement = document.getElementById('inputsAppContainer');
+const appContainerElement = document.getElementById('inputs_app_container');
 
 ReactDOM.render(
     <Provider store={store}>

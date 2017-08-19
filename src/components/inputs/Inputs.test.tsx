@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import Inputs from './Inputs';
+import { Inputs } from './Inputs';
 
 it('renders empty inputs', () => {
     const div = document.createElement('div');

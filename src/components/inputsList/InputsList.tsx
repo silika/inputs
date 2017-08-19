@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Input } from '../input';
 
-export default function InputsList({ inputs }) {
+export function InputsList({ inputs }) {
     return (
         <table>
             <thead>
@@ -17,8 +17,8 @@ export default function InputsList({ inputs }) {
             </thead>
             <tbody>
             {
-                inputs.map((input, inputIndex) => (
-                    <Input key={inputIndex} input={input}  />
+                inputs.map((input, index) => (
+                    <Input key={input.id || index} input={input}  />
                 ))
             }
             </tbody>

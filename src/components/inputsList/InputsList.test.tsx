@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import InputsList from './InputsList';
+import { InputsList } from './InputsList';
 
 it('renders inputs List', () => {
     const div = document.createElement('div');

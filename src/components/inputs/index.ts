@@ -1,1 +1,1 @@
-export {default as Inputs} from './Inputs';
+export * from './Inputs';
