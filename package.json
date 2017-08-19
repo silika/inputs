@@ -10,9 +10,21 @@
     "node-sass-chokidar": "0.0.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.2",
     "react-scripts-ts": "2.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@autumn-platform/common": "^0.1.1",
+    "@autumn-platform/inputs": "^0.1.1",
+    "@autumn-ui/inputs-api-redux": "^0.1.1",
+    "@types/react-redux": "^4.4.47",
+    "enzyme": "^2.9.1",
+    "jest": "^20.0.4",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
+    "redux": "^3.7.2"
+  },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
